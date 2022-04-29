@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
 :root {
   --Almost-white: hsl(0, 0%, 98%);
   --Medium-gray: hsl(0, 0%, 41%);
@@ -6,6 +7,11 @@
 body {
   background-color: var(--Almost-white);
   box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+button {
+  font-weight: 700;
+  font-size: 14px;
 }
 .d-flex {
   display: flex;
@@ -27,7 +33,6 @@ nav {
   column-gap: 27px;
   margin-left: 50px;
   margin-top: 2px;
-  font-size: 18px;
 }
 .nav-link {
   cursor: pointer;
@@ -45,9 +50,9 @@ nav {
   position: absolute;
   z-index: 9999;
   margin-top: 10px;
-  box-shadow: var(--Almost-black) 0px 3px 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
-  line-height: 10px;
+  line-height: 4px;
   left: 4%;
 }
 .pop-up-company {
@@ -56,15 +61,24 @@ nav {
   position: absolute;
   z-index: 9999;
   margin-top: 10px;
-  box-shadow: var(--Almost-black) 0px 3px 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 10px;
   line-height: 10px;
   left: 16%;
 }
+.pop-up-company p, .pop-up-features {
+  color: var(--Medium-gray);
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+.pop-up-company p:hover, .pop-up-features p:hover {
+  color: var(--Almost-black);
+}
 .features-icon {
   width: 20px;
   height: 20px;
-  margin-top: 15px;
+  margin-top: 8px;
   margin-right: 10px;
 }
 .account {
@@ -82,7 +96,7 @@ nav {
   border-radius: 10px;
   color: var(--Medium-gray);
   border: solid 1px var(--Medium-gray);
-  margin-top: 12px;
+  margin-top: 8px;
   margin-left: 15px;
 }
 .register button:hover{
@@ -92,7 +106,7 @@ nav {
 .arrow-icon {
   width: 10px;
   height: 7px;
-  margin-top: 26px;
+  margin-top: 20px;
   margin-left: 5px;
 }
 .nav-pop {
@@ -111,17 +125,21 @@ nav {
   margin-bottom: 50px;
 }
 .content h1 {
-  font-size: 68px;
+  font-size: 64px;
   max-width: 420px;
+  font-weight: 700;
 }
 .content-list {
   max-width: 500px;
   margin-left: 120px;
-  margin-top: 40px;
+  margin-top: 80px;  
 }
 .content-list p {
   max-width: 380px;
   color: var(--Medium-gray);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
 }
 .learn-more button {
   outline: none;
@@ -145,7 +163,7 @@ nav {
   margin-top: 30px;
 }
 .content-brands img {
-  margin-right: 25px;
+  margin-right: 35px;
   width: 80px;
   height: 27px;
 }
@@ -204,13 +222,14 @@ nav {
     justify-content: flex-start;
   }
   .pop-up-features, .pop-up-company {
+    color: var(--Medium-gray);
     position: relative;
     box-shadow: none;
     left: 0;
     padding: 5px 0;
     margin-top: -10px;
     margin-left: 25px;
-  }
+  } 
   .pop-up-company  {
     line-height: 22px;
   }
@@ -254,11 +273,15 @@ nav {
     height: 50vh;
   }
   .content-list h1 {
-    font-size: 32px;
+    font-size: 30px;
     max-width: 100%;
+  }
+  .content-brands {
+    margin-left: -20px;
   }
   .content-brands img {
     width: 65px;
+    margin-right: 25px;
   }
 }
 @media(max-width:320px) {
@@ -266,10 +289,12 @@ nav {
     height: 40vh;
   }
   .content-brands {
+    width: 100%;
     text-align: center;
     justify-content: center;
-    margin: 0 auto;
+    padding-left: 30px;
   }
+
   .content-brands img {
     width: 50px;
     height: 24px;
