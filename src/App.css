@@ -230,11 +230,15 @@ nav {
     margin-top: -10px;
     margin-left: 25px;
   } 
-  .pop-up-company  {
+  .pop-up-company, .pop-up-features  {
     line-height: 22px;
   }
   .feature-content {
     justify-content: flex-start;
+  }
+
+  .features-icon {
+    margin-top: 15px;
   }
   .content  {
     padding: 10px 10px;
