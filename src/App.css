@@ -1,38 +1,277 @@
-.App {
-  text-align: center;
+:root {
+  --Almost-white: hsl(0, 0%, 98%);
+  --Medium-gray: hsl(0, 0%, 41%);
+  --Almost-black: hsl(0, 0%, 8%);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--Almost-white);
+  box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.d-flex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.content-between {
+  justify-content: space-between;
+}
+.nav-bar {
+  margin: 10px 40px;
+}
+.logo {
+  width: 90px;
+  height: 30px;
+  margin-top: 17px;
+}
+nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 27px;
+  margin-left: 50px;
+  margin-top: 2px;
+  font-size: 18px;
+}
+.nav-link {
+  cursor: pointer;
+  color: var(--Medium-gray);
+}
+.nav-link:hover, .login:hover {
+  color: var(--Almost-black);
+}
+.feature-content {
+  justify-content: space-between;
+}
+.pop-up-features {
+  background-color: white;
+  padding: 5px 25px;
+  position: absolute;
+  z-index: 9999;
+  margin-top: 10px;
+  box-shadow: var(--Almost-black) 0px 3px 8px;
+  border-radius: 10px;
+  line-height: 10px;
+  left: 4%;
+}
+.pop-up-company {
+  background-color: white;
+  padding: 5px 25px;
+  position: absolute;
+  z-index: 9999;
+  margin-top: 10px;
+  box-shadow: var(--Almost-black) 0px 3px 8px;
+  border-radius: 10px;
+  line-height: 10px;
+  left: 16%;
+}
+.features-icon {
+  width: 20px;
+  height: 20px;
+  margin-top: 15px;
+  margin-right: 10px;
+}
+.account {
+  margin-top: 2px;
+}
+.login {
+  cursor: pointer;
+  color: var(--Medium-gray);
+}
+.register button {
+  outline: none;
+  background-color: transparent;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 10px;
+  color: var(--Medium-gray);
+  border: solid 1px var(--Medium-gray);
+  margin-top: 12px;
+  margin-left: 15px;
+}
+.register button:hover{
+  color: var(--Almost-black);
+  border: solid 1px var(--Almost-black);
+}
+.arrow-icon {
+  width: 10px;
+  height: 7px;
+  margin-top: 26px;
+  margin-left: 5px;
+}
+.nav-pop {
+  color: var(--Medium-gray);
+  cursor: pointer;
+}
+.nav-pop:hover {
+  color: var(--Almost-black);
+}
+.display-mobile {
+  visibility: hidden;
+  display: none;
+}
+.content {
+  padding: 10px 50px;
+  margin-bottom: 50px;
+}
+.content h1 {
+  font-size: 68px;
+  max-width: 420px;
+}
+.content-list {
+  max-width: 500px;
+  margin-left: 120px;
+  margin-top: 40px;
+}
+.content-list p {
+  max-width: 380px;
+  color: var(--Medium-gray);
+}
+.learn-more button {
+  outline: none;
+  background-color: black;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 12px;
   color: white;
+  border: none;
+  margin-top: 12px;
+  margin-left: 1px;
+  margin-bottom: 70px;
+  margin-top: 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.learn-more button:hover {
+  color: var(--Almost-black);
+  border: solid 1px var(--Almost-black);
+  background-color: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.content-brands {
+  margin-top: 30px;
+}
+.content-brands img {
+  margin-right: 25px;
+  width: 80px;
+  height: 27px;
+}
+.content-bg{
+  width: 60%;
+  height: 100vh;
+  background-image: url(./images/image-hero-desktop.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+@media(max-width: 768px) {
+  .nav-bar {
+    visibility: hidden;
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .display-mobile {
+    visibility: visible;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px 20px;
+  }
+  .side-menu-bg {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    z-index: 2;
+    box-sizing: border-box;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    
+  }
+  .side-menu {
+    position: absolute;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: white;
+  }
+  .menu-open, .menu-close {
+    cursor: pointer;
+  }
+  .menu-close {
+    float: right;
+    margin-top: 10px;
+    margin-right: 7px;
+  }
+  nav {
+    grid-template-columns: auto;
+    padding-top: 50px;
+    margin-left: 17px;
+  }
+  .nav-pop {
+    justify-content: flex-start;
+  }
+  .pop-up-features, .pop-up-company {
+    position: relative;
+    box-shadow: none;
+    left: 0;
+    padding: 5px 0;
+    margin-top: -10px;
+    margin-left: 25px;
+  }
+  .pop-up-company  {
+    line-height: 22px;
+  }
+  .feature-content {
+    justify-content: flex-start;
+  }
+  .content  {
+    padding: 10px 10px;
+  }
+  .content-list {
+    margin-left: 30px;
+    max-width: 300px;
+    margin-top: 60px;
+  }
+  .content-list h1 {
+    font-size: 42px;
+  }
+  .content-bg {
+    width: 45%;
+    margin-right: 10px;
+  }
+  .content-brands {
+    margin-top: 5px;
+  }
+}
+@media(max-width:500px) {
+  .content {
+    flex-direction: column-reverse;
+    margin: 15px auto;
+  }
+  .content-list {
+    margin-top: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .content-bg {
+    background-image: url(./images/image-hero-mobile.png);
+    width: 100%;
+    height: 50vh;
+  }
+  .content-list h1 {
+    font-size: 32px;
+    max-width: 100%;
+  }
+  .content-brands img {
+    width: 65px;
+  }
+}
+@media(max-width:320px) {
+  .content-bg {
+    height: 40vh;
+  }
+  .content-brands {
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .content-brands img {
+    width: 50px;
+    height: 24px;
   }
 }
