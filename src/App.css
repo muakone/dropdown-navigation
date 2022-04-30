@@ -172,7 +172,7 @@ nav {
   height: 100vh;
   background-image: url(./images/image-hero-desktop.png);
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   background-size: contain;
 }
 @media(max-width: 768px) {
@@ -275,6 +275,7 @@ nav {
     background-image: url(./images/image-hero-mobile.png);
     width: 100%;
     height: 50vh;
+    background-position: top;
   }
   .content-list h1 {
     font-size: 30px;
