@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dropdown-navigation/static/css/main.79459b4a.css",
+    "main.css": "/dropdown-navigation/static/css/main.d9323c0c.css",
     "main.js": "/dropdown-navigation/static/js/main.b7c3a164.js",
     "static/js/787.c73cb4a9.chunk.js": "/dropdown-navigation/static/js/787.c73cb4a9.chunk.js",
     "static/media/image-hero-desktop.png": "/dropdown-navigation/static/media/image-hero-desktop.50cc22fddeb0c072b414.png",
@@ -19,12 +19,12 @@
     "static/media/icon-menu.svg": "/dropdown-navigation/static/media/icon-menu.863803c904916606b7a1998b3c5736aa.svg",
     "static/media/icon-arrow-down.svg": "/dropdown-navigation/static/media/icon-arrow-down.bebf05132571af33611ede9cdfdbed0f.svg",
     "static/media/icon-arrow-up.svg": "/dropdown-navigation/static/media/icon-arrow-up.01861a1152dfab5f1070228d306352f4.svg",
-    "main.79459b4a.css.map": "/dropdown-navigation/static/css/main.79459b4a.css.map",
+    "main.d9323c0c.css.map": "/dropdown-navigation/static/css/main.d9323c0c.css.map",
     "main.b7c3a164.js.map": "/dropdown-navigation/static/js/main.b7c3a164.js.map",
     "787.c73cb4a9.chunk.js.map": "/dropdown-navigation/static/js/787.c73cb4a9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.79459b4a.css",
+    "static/css/main.d9323c0c.css",
     "static/js/main.b7c3a164.js"
   ]
 }
