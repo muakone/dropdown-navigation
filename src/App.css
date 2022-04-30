@@ -291,7 +291,7 @@ nav {
 @media(max-width:360px) {
   .content-bg {
     width: 100%;
-    height: 16em;
+    height: 13em;
     background-size: cover;
   }
   .content-brands {
